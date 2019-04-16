@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+    <meta name="keyWords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="text=no">
+    <meta name="format-detection" content="password=no">
+    <title>金牌经纪人</title>
+
+    <link rel="stylesheet" href="css/common.css" />
+    <script src="js/zepto.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    
+  </head>
+  <body>
+    <div class="container" id="my_infor">
+      <div class="banner">
+        <p class="bannre_text">您就是ChainUP的金牌经纪人</p>
+      </div>
+      <div class="content">
+        <div class="button">
+          <button class="copy_button">复制邀请链接</button>
+          <input type="text" id="linkUrl" readonly="readonly" class="linkUrl" name="linkUrl"  value="777888272772727" />
+          <p class="logout">切换账号</p>
+        </div>
+        <div class="rules">
+          <p>规则：</p>
+          <p>1.引荐客户成单给予5%的佣金；<br />
+             2.客户填完表单，我们邀请您和客户群聊，客户经理一对一服务；</p>
+        </div>
+        <div class="my_invitation">
+          <h3>我的邀请</h3>
+          <p class="item">
+            <span class="t">本月邀请人数</span>
+            <span class="v total">0人</span>
+          </p>
+          <p class="item">
+            <span class="t">邀请总人数</span>
+            <span class="v totalMouth">0人</span>
+          </p>
+        </div>
+        <ul class="data_list invite_info">
+          <li class="span_table th_table">
+            <span class="td_name">姓名</span>
+            <span class="td_number">手机号</span>
+            <span class="td_time">邀请时间</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script src="js/geetest.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    // 获取邀请链接
+    invitationLink();
+    // 获取邀请数据
+    getInviteInfo();
+    // 点击复制邀请链接
+    copyUrl();
+    // 切换账号
+    logout();
+  </script>
+</html>
+
+
+
+

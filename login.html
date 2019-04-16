@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+    <meta name="keyWords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="text=no">
+    <meta name="format-detection" content="password=no">
+    <title>金牌经纪人</title>
+
+    <link rel="stylesheet" href="css/common.css" />
+    <script src="js/zepto.min.js"></script>
+    <script src="https://cdn.bootcss.com/axios/0.19.0-beta.1/axios.js"></script>
+    
+  </head>
+  <body>
+    <div class="container" id="publict_infor">
+      <div class="banner">
+        <p class="bannre_text">您就是ChainUP的金牌经纪人</p>
+      </div>
+      <div class="content">
+        <form class="login_form">
+          <div class="form_infor top_not_margin pub_select">
+            <div class="input_inlin">
+              <p class="tit noty">所在地</p>
+              <p class="text">
+                <i class="dow_icon"></i>
+                <span class="input_text select_input">中国 +86</span>
+                <input type="hidden" class="input_text" name="countryCode" value="+86" />
+                <div class="select_box">
+                  <div class="select_box_bar">
+                    <ul class="select_option"></ul>
+                  </div>
+                </div>
+              </p>
+            </div>
+          </div>
+          <div class="form_infor">
+            <div class="input_inlin">
+              <p class="tit">手机号</p>
+              <p class="text">
+                <input type="text" class="input_text" name="mobile" value="" />
+              </p>
+              <p class="err_text">手机号不可以为空</p>
+            </div>
+          </div>
+          <div class="form_infor form_captcha">
+            <div class="input_inlin">
+              <p class="text captchaBox">
+                <!-- <input type="text" class="input_text" /> -->
+              </p>
+              <p class="err_text">请先进行滑动验证</p>
+            </div>
+          </div>
+          <div class="form_infor">
+            <div class="input_inlin">
+              <p class="tit">短信验证码</p>
+              <p class="text">
+                <input type="text" class="input_text input_code" name="smsAuthCode" />
+                <span class="getCode">获取验证码</span>
+              </p>
+              <p class="err_text">验证码错误</p>
+            </div>
+          </div>
+        </form> 
+        <div class="button">
+          <button class="login_button">登录</button>
+        </div>
+        <div class="rules">
+          <p>规则：</p>
+          <p>1.引荐客户成单给予5%的佣金；<br />
+             2.客户填完表单，我们邀请您和客户群聊，客户经理一对一服务；</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/geetest.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    // 获取极验 验证码的初始化数据
+    getTartCaptcha();
+    //  获取短信验证码
+    getCode();
+    // 登录提交
+    submitLogin();
+  </script>
+</html>
+
+
+
+

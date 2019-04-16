@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+    <meta name="keyWords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="text=no">
+    <meta name="format-detection" content="password=no">
+    <title>售前咨询</title>
+
+    <link rel="stylesheet" href="css/common.css" />
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    
+  </head>
+  <body>
+    <div class="container" id="publict_infor">
+      <div class="banner">
+        <p class="bannre_text_2">尊贵客户</p>
+        <p class="bannre_text_3">留下您的信息，我们提供一对一的专属服务</p>
+      </div>
+      <div class="content">
+        <form class="seek_form">
+          <div class="form_infor top_not_margin">
+            <div class="input_inlin">
+              <p class="tit">姓名(必填)</p>
+              <p class="text">
+                <input type="text" class="input_text" name="userName" value="" />
+              </p>
+              <p class="err_text">姓名不可以为空</p>
+            </div>
+          </div>
+          <div class="form_infor">
+            <div class="input_inlin">
+              <p class="tit">手机号(必填)</p>
+              <p class="text">
+                <input type="text" class="input_text" name="mobileNumber" value="" />
+              </p>
+              <p class="err_text">手机号不可以为空</p>
+            </div>
+          </div>
+          <div class="form_infor">
+            <div class="input_inlin">
+              <p class="tit">所在城市</p>
+              <p class="text">
+                <input type="text" class="input_text" name="city" value="" />
+              </p>
+            </div>
+          </div>
+          <div class="form_infor">
+            <div class="input_inlin">
+              <p class="tit">问题及留言</p>
+              <p class="text">
+                <textarea type="text" name="leaveComments" class="input_text"></textarea>
+              </p>
+            </div>
+          </div>
+          <p class="limit"><i class="limit_num">0</i>/200</p>
+        </form>
+        <div class="button">
+          <button class="seek_submit">确认提交</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/geetest.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    // 表单提交
+    seekSubmit()
+  </script>
+</html>
+
+
+
+
