@@ -44,7 +44,7 @@ var phoneCode =  {
 var ajaxios = function (optiopn) {
 
   $.ajax({
-    url: optiopn.ajaxurl,
+    url: 'http://www.hiotc.pro/' + optiopn.ajaxurl,
     data: optiopn.data || '',
      headers: {
        "content-type": 'application/json;charset=utf-8',
@@ -62,7 +62,6 @@ var ajaxios = function (optiopn) {
 
 // 获取极验验证初始化数据
 var getTartCaptcha = function () {
-  // http://127.0.0.1:9000/
   ajaxios({
     ajaxurl: 'common/tartCaptcha',
     data: {},
